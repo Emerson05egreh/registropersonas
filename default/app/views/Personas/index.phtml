@@ -1,0 +1,19 @@
+ <div class="content">
+    <?php View::content() ?> 
+    <h3>PERSONAS</h3>
+    <table>
+    <thead>
+        <th>ID</th>
+        <th>nombres</th>
+        </thead>
+        </body>
+            <?php foreach ($listPersonas->items as $item): ?>
+                <tr>
+                    <td><?php echo $item ->id ?></td>
+                    <td><?php echo $item ->nombres ?></td>
+                    <td><?php echo $item -> ?></td>
+                </tr>
+        <?php echo $item->nombres ?>
+    <?php endforeach ?>
+    </table>
+</div>
